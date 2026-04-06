@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Job Board</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav>
+<h2>JobBoard</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="jobs.html">Jobs</a></li>
+<li><a href="employer.html">Employer</a></li>
+<li><a href="candidate.html">Candidate</a></li>
+<li><a href="login.html">Login</a></li>
+<span id="userName" style="margin-left:20px;"></span>
+<button onclick="logout()" style="margin-left:10px;">Logout</button>
+</ul>
+</nav>
+
+<div class="container">
+
+<h1>Welcome to Job Board</h1>
+<p>Find your dream job easily</p>
+
+<h2>Featured Jobs</h2>
+
+<!-- Job 1 -->
+<div class="job-card">
+<h3>Frontend Developer</h3>
+<p>Company: Infosys</p>
+<button onclick="setJobDetails('Frontend Developer','Infosys','Bangalore','5 LPA','1-2 Years','HTML,CSS,JS','Build responsive UI')">
+View Details
+</button>
+</div>
+
+<!-- Job 2 -->
+<div class="job-card">
+<h3>Python Developer</h3>
+<p>Company: Wipro</p>
+<button onclick="setJobDetails('Python Developer','Wipro','Chennai','4 LPA','0-2 Years','Python,Flask','Backend development')">
+View Details
+</button>
+</div>
+
+<!-- Job 3 -->
+<div class="job-card">
+<h3>React Developer</h3>
+<p>Company: TCS</p>
+<button onclick="setJobDetails('React Developer','TCS','Bangalore','6 LPA','1-3 Years','React,JavaScript','Frontend apps')">
+View Details
+</button>
+</div>
+
+<!-- Job 4 -->
+<div class="job-card">
+<h3>Full Stack Developer</h3>
+<p>Company: Capgemini</p>
+<button onclick="setJobDetails('Full Stack Developer','Capgemini','Hyderabad','7 LPA','2-4 Years','React,Node','Full stack development')">
+View Details
+</button>
+</div>
+
+<!-- View More Button -->
+<div style="text-align:center; margin-top:20px;">
+<a href="jobs.html" class="btn">View More Jobs</a>
+</div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

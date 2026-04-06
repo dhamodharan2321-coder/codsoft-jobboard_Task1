@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jobs</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+<h2>JobBoard</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="jobs.html">Jobs</a></li>
+</ul>
+</nav>
+
+<div class="container">
+<h1>Available Jobs</h1>
+
+<input type="text" id="search" onkeyup="searchJobs()" placeholder="Search jobs...">
+
+<!-- Default Jobs -->
+<div id="defaultJobs">
+
+<div class="job-card">
+<h3>Frontend Developer</h3>
+<p>Company: Infosys</p>
+<p>Location: Bangalore</p>
+<p>Salary: 5 LPA</p>
+<button onclick="setJobDetails('Frontend Developer','Infosys','Bangalore','5 LPA','1-2 Years','HTML,CSS,JS','Build responsive UI')">View Details</button>
+</div>
+
+<div class="job-card">
+<h3>Backend Developer</h3>
+<p>Company: Wipro</p>
+<p>Location: Chennai</p>
+<p>Salary: 6 LPA</p>
+<button onclick="setJobDetails('Backend Developer','Wipro','Chennai','6 LPA','1-3 Years','Python,Node','Server-side logic')">View Details</button>
+</div>
+
+<div class="job-card">
+<h3>React Developer</h3>
+<p>Company: TCS</p>
+<p>Location: Bangalore</p>
+<p>Salary: 6 LPA</p>
+<button onclick="setJobDetails('React Developer','TCS','Bangalore','6 LPA','1-3 Years','React,JS','Frontend apps')">View Details</button>
+</div>
+
+<div class="job-card">
+<h3>Full Stack Developer</h3>
+<p>Company: Capgemini</p>
+<p>Location: Hyderabad</p>
+<p>Salary: 7 LPA</p>
+<button onclick="setJobDetails('Full Stack Developer','Capgemini','Hyderabad','7 LPA','2-4 Years','React,Node','Full stack dev')">View Details</button>
+</div>
+
+<div class="job-card">
+<h3>Java Developer</h3>
+<p>Company: HCL</p>
+<p>Location: Pune</p>
+<p>Salary: 5 LPA</p>
+<button onclick="setJobDetails('Java Developer','HCL','Pune','5 LPA','1-3 Years','Java,Spring','Backend systems')">View Details</button>
+</div>
+
+<div class="job-card">
+<h3>Data Analyst</h3>
+<p>Company: Accenture</p>
+<p>Location: Bangalore</p>
+<p>Salary: 6 LPA</p>
+<button onclick="setJobDetails('Data Analyst','Accenture','Bangalore','6 LPA','1-2 Years','SQL,Python','Analyze data')">View Details</button>
+</div>
+
+<div class="job-card">
+<h3>UI/UX Designer</h3>
+<p>Company: Zoho</p>
+<p>Location: Chennai</p>
+<p>Salary: 4 LPA</p>
+<button onclick="setJobDetails('UI/UX Designer','Zoho','Chennai','4 LPA','0-2 Years','Figma,Design','Design UI')">View Details</button>
+</div>
+
+<div class="job-card">
+<h3>DevOps Engineer</h3>
+<p>Company: IBM</p>
+<p>Location: Hyderabad</p>
+<p>Salary: 8 LPA</p>
+<button onclick="setJobDetails('DevOps Engineer','IBM','Hyderabad','8 LPA','2-4 Years','AWS,Docker','Deployment')">View Details</button>
+</div>
+
+<div class="job-card">
+<h3>QA Tester</h3>
+<p>Company: Cognizant</p>
+<p>Location: Chennai</p>
+<p>Salary: 4 LPA</p>
+<button onclick="setJobDetails('QA Tester','Cognizant','Chennai','4 LPA','0-2 Years','Testing,Manual','Test apps')">View Details</button>
+</div>
+
+<div class="job-card">
+<h3>Mobile App Developer</h3>
+<p>Company: Tech Mahindra</p>
+<p>Location: Bangalore</p>
+<p>Salary: 7 LPA</p>
+<button onclick="setJobDetails('Mobile App Developer','Tech Mahindra','Bangalore','7 LPA','1-3 Years','Flutter,Android','Build apps')">View Details</button>
+</div>
+
+</div>
+
+</div>
+
+<!-- Employer Jobs -->
+<div id="jobContainer"></div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
